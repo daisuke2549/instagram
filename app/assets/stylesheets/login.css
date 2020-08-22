@@ -1,0 +1,236 @@
+.sign_in_image img{
+    width: 375px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    
+}
+
+.sign_in_login_actions{
+    position: absolute;
+    width: 343px;
+    height: 48px;
+    left: 16px;
+    top: 626px;
+
+    /* 1 */
+
+    background: #FFE600;
+}
+
+.sign_in_login_button{
+    position: relative;
+    height: 21px;
+    left: 5.27%;
+    right: 44.53%;
+    padding-top: 15px;
+    white-space: nowrap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+   text-decoration-color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+a{
+    text-decoration: none;
+}
+
+}
+
+.sign_in_account_button{
+    position: absolute;
+    height: 21px;
+    left: 30.27%;
+    right: 44.53%;
+    padding-top: 15px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    white-space: nowrap;
+    text-align: center;
+
+    color: #000000;
+   text-decoration-color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.new_user{
+    margin-top:30px;
+}
+
+
+.sign_in_email label{
+    height: 17px;
+    padding-left:11px;
+    width:343px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #979797;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.sign_in_email input{
+    position: absolute;
+    height:30px;
+    margin-left:11px;
+    width: 327px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px
+    
+}
+
+.sign_up_account_password {
+    height: 17px;
+    width:343px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+    margin-top:60px;
+    color: #979797;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.sign_up_account_password input{
+    position: absolute;
+    height:30px;
+    width: 300px;
+    margin-top:85px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px
+    
+}
+
+.sign_in_password{
+    position: absolute;
+    height: 17px;
+    left:20px;
+    width:343px;
+    top: 360px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #979797;
+
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.sign_in_password input{
+    position: absolute;
+    width: 327px;
+    height:30px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px
+}
+
+
+.sign_up_account{
+    height: 17px;
+    padding-left:11px;
+    width:343px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #979797;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.sign_up_account input{
+    position: absolute;
+    height:30px;
+    width: 343px;
+    height: 0px;
+    left: 17px;
+    top: 321px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px
+}
+
+.sign_up_account_password{
+    height: 17px;
+    padding-left:11px;
+    width:343px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+    padding-top:50px;
+    color: #979797;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.sign_up_account_password input{
+    position: absolute;
+    height:30px;
+    width: 330px;
+    left: 17px;
+    top: 360px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px
+}
+
+.sign_up_password{
+    height: 17px;
+    padding-left:11px;
+    width:343px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+    padding-top:100px;
+    color: #979797;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
