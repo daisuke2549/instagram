@@ -1,3 +1,57 @@
 // Place all the styles related to the Profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.Profile_time{
+    background-color: blue;
+    width:100px;
+}
+
+.Profile_picture{
+    position: absolute;
+    width: 76.88px;
+    height: 76.88px;
+    left: 148.56px;
+    top: 105.56px; 
+    background: url(c3e3289402158a588d3d5ef651216695.jpg), url(c5c67580205963.jpg), url(Checker.png);
+}
+.Profile_picture2{
+    position: absolute;
+width: 207px;
+height: 192px;
+left: 16px;
+top: 318px;
+// background: url(Rectangle (1).png), url(Checker.png);
+}
+.Profile_picture3{
+    position: absolute;
+width: 128px;
+height: 92px;
+left: 231px;
+top: 318px;
+// background: url(Rectangle (2).png), #C4C4C4;
+}
+
+.Profile_picture4{
+    position: absolute;
+    width: 128px;
+    height: 92px;
+    left: 231px;
+    top: 418px;
+    // background: url(Rectangle (3).png);
+}
+.Profile_picture5{
+    position: absolute;
+    width: 128px;
+    height: 92px;
+    left: 16px;
+    top: 518px;
+    // background: url(Rectangle (4).png);
+}
+.Profile_picture6{
+    position: absolute;
+    width: 128px;
+    height: 92px;
+    left: 16px;
+    top: 618px;
+    // background: url(Rectangle (5).png);
+}
