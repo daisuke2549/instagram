@@ -6,6 +6,26 @@
     width:100px;
 }
 
+.Profile_names_title{
+    position: absolute;
+    height: 24px;
+    left: 121px;
+    right: 38.4%;
+    top: 46px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #333A42;
+}
+
 .Profile_back_button1{
    
     position: absolute;
@@ -23,6 +43,15 @@
     top: 4.90%;
     bottom: 92.73%; 
 
+}
+
+.Wifi_picture_profiles{
+    position: absolute;
+    left: 85.6%;
+    right: 13.16%;
+    top: 56.64%;
+    bottom: 35.69%;
+    background: #DADADA;
 }
 
 
