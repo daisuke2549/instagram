@@ -1,0 +1,84 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.post_card_image{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 17px;
+    top: 109px;
+    background: url(6e4c2cf37c6c69746d2969655b96afa8.jpg), url(Checker.png);
+}
+
+
+.post_card_title_comment p1{
+    position: absolute;
+    width: 64px;
+    height: 23px;
+    left: 55px;
+    top: 106px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+
+
+
+.post_card_picture1{
+    position: absolute;
+    width: 198px;
+    height: 225px;
+    left: 17px;
+    top: 157px;
+    background: url(78eecb81098077.jpg), #C4C4C4;
+}
+.post_card_picture2{
+    position: absolute;
+    width: 138px;
+    height: 109px;
+    left: 222px;
+    top: 157px;
+    background: url(01938081188193.jpg), #C4C4C4;
+}
+
+.post_card_picture3{
+    position: absolute;
+    width: 138px;
+    height: 109px;
+    left: 222px;
+    top: 273px;
+    background: url(9ea7a781188193.jpg), #C4C4C4;
+}
+
+.post_card_picture_below p1{
+    position: absolute;
+    width: 198px;
+    height: 225px;
+    left: 17px;
+    top: 394px;
+}
+
+.post_card_picture_below p2{
+    position: absolute;
+    width: 198px;
+    height: 225px;
+    left: 47px;
+    top: 394px;
+}
+
+
+.post_card_picture_below p3{
+    position: absolute;
+    width: 198px;
+    height: 225px;
+    left: 77.54px;
+    top: 394px;
+}
