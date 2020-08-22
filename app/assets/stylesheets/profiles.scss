@@ -6,6 +6,26 @@
     width:100px;
 }
 
+.Profile_back_button1{
+   
+    position: absolute;
+    left: 2.07%;
+    right: 94.4%;
+    top: 5.6%;
+    bottom: 92.12%;
+}
+
+
+.Profile_back_button2{
+    position: absolute;
+    left: 2.33%;
+    right: 91.2%;
+    top: 4.90%;
+    bottom: 92.73%; 
+
+}
+
+
 .Profile_picture{
     position: absolute;
     width: 76.88px;
@@ -54,4 +74,69 @@ top: 318px;
     left: 16px;
     top: 618px;
     // background: url(Rectangle (5).png);
+}
+.Profile_picture7{
+    position: absolute;
+    width: 207px;
+    height: 192px;
+    left: 152px;
+    top: 518px;
+    background: url(682f6b65413447);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+
+.Profile_posts{
+    position: absolute;
+    width: 38px;
+    height: 23px;
+    left: 75px;
+    top: 253px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+}
+
+
+.Profile_followers{
+    position: absolute;
+    width: 66px;
+    height: 23px;
+    left: 152px;
+    top: 253px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #9E9E9E;
+} 
+
+.Profile_following{
+    position: absolute;
+    width: 67px;
+    height: 23px;
+    left: 249px;
+    top: 253px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #9E9E9E;
 }
