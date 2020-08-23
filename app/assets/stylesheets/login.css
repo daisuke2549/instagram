@@ -31,17 +31,18 @@
     font-size: 14px;
     line-height: 21px;
     /* identical to box height */
-
+    text-decoration: none;
     text-align: center;
 
     color: #000000;
    text-decoration-color: #000000;
     mix-blend-mode: normal;
     opacity: 0.9;
-a{
-    text-decoration: none;
 }
 
+.sign_in_login_button a{
+    text-decoration: none;
+    color:black;
 }
 
 .sign_in_account_button{

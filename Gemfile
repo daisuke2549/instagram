@@ -25,6 +25,8 @@ gem 'devise'
 gem 'faker'
 gem 'trix'
 gem 'pry-rails'
+gem 'pry-byebug'
+gem 'pry-doc'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
