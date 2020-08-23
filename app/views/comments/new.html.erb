@@ -1,1 +1,11 @@
-<p>hello world</p>
+<div class ='New_comments_page'>
+   <div class = 'New_comments_page_title'>
+      <p>New Comment</p>
+   </div>
+   <div class = 'New_comments_page_space'>
+     <%= form_with(model: @comment, url: posts_path(@comment.post), local: true) do |f| %>
+   </div>
+   <div>
+   <%= f.submit 'Submit', class: 'btn-primary' %>
+     <% end %>
+</div>

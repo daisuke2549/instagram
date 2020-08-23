@@ -1,19 +1,77 @@
+.Profile_back_button3{
+    position: absolute;
+    left: 4.27%;
+    right: 94.4%;
+    top: 6.4%;
+    bottom: 92.12%;
+}
+
+
+.Profile_back_button4{
+    position: absolute;
+    left: 4.53%;
+    right: 91.2%;
+    top: 5.8%;
+    bottom: 92.73%;
+}
+
 .Profile_posts_comment p{
+
     position: absolute;
     height: 24px;
     left: 38.93%;
     right: 38.93%;
     top: 46px;
+    
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height */
-
+    
     display: flex;
     align-items: center;
     text-align: center;
-
+    
     color: #333A42;
+    
+}
+
+.New_comments_page_title{
+    position: absolute;
+    height: 36px;
+    left: 26px;
+    right: 0%;
+    top: 72px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.New_comments_page_space{
+    position: absolute;
+    width: 362px;
+    height: 203px;
+    left: 26px;
+    top: 161px;
+
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    position: absolute;
+    width: 362px;
+    height: 40px;
+    left: 30px;
+    top: 700px;
+    color:white;
+    background: green;
+    border-radius: 4px;
 }
