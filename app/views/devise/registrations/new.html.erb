@@ -6,12 +6,12 @@
 <%= form_for(resource, as: resource_name, url: user_session_path(resource_name)) do |f| %>
   <div class="sign_in_email">
     <%= f.label :Account %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email"  %>
+    <%= f.user_field :user, autofocus: true %>
   </div>
 
   <div class="sign_in_password">
     <%= f.label :Email %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.password_field :password, autocomplete: "email" %>
   </div>
  
   <div class="sign_up_account_password">
@@ -20,10 +20,8 @@
   </div>
 
   <div class="sign_in_login_actions">
-   <div class="sign_in_login_button">
-   <%= link_to "Create Account", root_path %>
-
-   <div> 
+    <%= f.submit "Create account" %>
   </div>
 <% end %>
+
 
