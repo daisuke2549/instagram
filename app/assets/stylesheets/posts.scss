@@ -47,12 +47,12 @@
 
 
 .post_card_picture1{
-    position: absolute;
+
     width: 198px;
     height: 225px;
     left: 17px;
     top: 157px;
-    background: url(78eecb81098077.jpg), #C4C4C4;
+
 }
 .post_card_picture2{
     position: absolute;
@@ -238,6 +238,25 @@ color: #333A42;
     left: 5.87%;
     right: 46.4%;
     top: 259px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    
+    /* Gray 4 */
+    
+    color: #BDBDBD;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+.post_new_making_content h4{
+    position: absolute;
+    height: 26px;
+    left: 5.87%;
+    right: 46.4%;
+    top: 290px;
     
     font-family: Poppins;
     font-style: normal;

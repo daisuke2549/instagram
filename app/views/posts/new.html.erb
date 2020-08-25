@@ -6,9 +6,10 @@
 <%= form_for @post do |f| %>
  <div class = "post_new_making_content"> 
   <h1><%= f.text_field :content %></h1>
-  <h2><%= f.file_field :image %></h2>
+  <h2><%= f.file_field :img %></h2>
   <h3><%= f.submit 'アップロードする'%></h3>
-</div> 
+  <h4><%= link_to "ホームへ戻る", root_path %></h4>
+  </div> 
 <% end %>
 </div>
 
