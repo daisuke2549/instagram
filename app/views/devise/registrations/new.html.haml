@@ -1,0 +1,17 @@
+.sign_in_image
+  = image_tag "Rectangle.png", alt: "Rails icon", id: "assets", class: "image", width: "300px"
+= form_for(resource, as: resource_name, url: user_session_path(resource_name)) do |f|
+  .sign_in_email
+    = f.label :Account
+    %br/
+    = f.text_field :account, autocomplete:"off"
+  .sign_in_password
+    = f.label :Email
+    %br/
+    = f.email_field :email, autocomplete: "email"
+  .sign_up_account_password
+    = f.label :password
+    %br/
+    = f.password_field :password, autocomplete: "current-password"
+  .sign_in_login_actions
+    = f.submit "Create account"

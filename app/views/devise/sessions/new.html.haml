@@ -1,0 +1,15 @@
+.sign_in_image
+  = image_tag "Rectangle.png", alt: "Rails icon", id: "assets", class: "image", width: "300px"
+= form_for(resource, as: resource_name, url: user_session_path(resource_name)) do |f|
+  .sign_in_email
+    = f.label :email
+    %br/
+    = f.email_field :email, autofocus: true, autocomplete: "email"
+  .sign_in_password
+    = f.label :password
+    %br/
+    = f.password_field :password, autocomplete: "current-password"
+  .sign_in_login_actions
+    .sign_in_login_button
+      %div
+      = render "devise/shared/links"
