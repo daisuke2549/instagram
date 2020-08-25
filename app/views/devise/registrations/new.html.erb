@@ -6,7 +6,7 @@
 <%= form_for(resource, as: resource_name, url: user_session_path(resource_name)) do |f| %>
   <div class="sign_in_email">
   <%= f.label :Account %><br />
-  <%= f.account_field :account%>
+  <%= f.text_field :account%>
   </div>
 
   <div class="sign_in_password">
