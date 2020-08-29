@@ -54,14 +54,12 @@
     color: #000000;
 }
 
-.New_comments_page_space{
+.New_comments_page_space textarea {
     position: absolute;
     width: 362px;
     height: 203px;
     left: 26px;
     top: 161px;
-
-    background: #F4F4F4;
     border-radius: 10px;
 }
 
@@ -69,8 +67,8 @@
     position: absolute;
     width: 362px;
     height: 40px;
-    left: 30px;
-    top: 700px;
+    left: 26px;
+    top: 500px;
     color:white;
     background: green;
     border-radius: 4px;
