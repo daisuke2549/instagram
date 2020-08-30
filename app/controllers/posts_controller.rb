@@ -20,13 +20,11 @@ class PostsController < ApplicationController
 
     private
     def post_params
-<<<<<<< HEAD
+
       params.require(:post).permit(
       :content,
       :img
     )
-=======
-    
->>>>>>> master
+
     end
 end
