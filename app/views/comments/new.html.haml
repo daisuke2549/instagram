@@ -1,0 +1,8 @@
+.New_comments_page
+  .New_comments_page_title
+    %p New Comment
+  .New_comments_page_space
+    = form_with(model: @comment, url: posts_path(@comment.post), local: true) do |f|
+      %div
+      = f.text_area :content
+      = f.submit 'Submit', class: 'btn-primary'

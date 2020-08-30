@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :models
+<<<<<<< HEAD
   devise_for :accounts
   devise_for :users
+=======
+
+>>>>>>> master
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: "profiles#index"
   resources :posts do
