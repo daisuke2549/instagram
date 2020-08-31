@@ -4,6 +4,6 @@
   = form_for @post do |f|
     .post_new_making_content
       %h1= f.text_field :content
-      %h2= f.file_field :img
+      %h2= f.file_field :images
       %h3= f.submit 'アップロードする'
       %h4= link_to "ホームへ戻る", posts_path
