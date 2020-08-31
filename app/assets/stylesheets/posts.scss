@@ -1,9 +1,14 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 
-.post_card_image{
-    position: absolute;
+.post-post_card_image_tag_title{
+    position: relative;
+    margin-top:-500px;
+    font-weight: bold;
+
+}
+
+
+.post_card_image img{
+    position: relative;
     width: 30px;
     height: 30px;
     left: 17px;
@@ -13,11 +18,11 @@
 
 
 .post_card_title_comment p1{
-    position: absolute;
+    position: relative;
     width: 64px;
     height: 23px;
     left: 55px;
-    top: 106px;
+    top: 70px;
     
     font-family: Poppins;
     font-style: normal;
@@ -30,11 +35,11 @@
 }
 
 .post_card_title_comment p2{
-    position: absolute;
+    position:relative;
     width: 72px;
     height: 20px;
     left: 55px;
-    top: 126px;
+    top: 65px;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -47,59 +52,57 @@
 
 
 .post_card_picture1{
-    position: absolute;
     width: 198px;
     height: 225px;
     left: 17px;
-    top: 157px;
+    top: 70px;
 
 }
 .post_card_picture2{
-    position: absolute;
+    position: relative;
     width: 138px;
     height: 109px;
     left: 222px;
-    top: 157px;
+    top: -100px;
     background: url(01938081188193.jpg), #C4C4C4;
 }
 
 .post_card_picture3{
-    position: absolute;
+    position: relative;
     width: 138px;
     height: 109px;
     left: 222px;
-    top: 273px;
+    top: -90px;
     background: url(9ea7a781188193.jpg), #C4C4C4;
 }
 
 .post_card_picture_below p1{
-    position: absolute;
+    position: relative;
     width: 198px;
     height: 225px;
     left: 17px;
-    top: 394px;
+    top: -154px;
 }
 
 .post_card_picture_below p2{
-    position: absolute;
+    position: relative;
     width: 198px;
     height: 225px;
     left: 47px;
-    top: 394px;
+    top: -380px;
 }
 
 
 .post_card_picture_below p3{
-    position: absolute;
+    position: relative;
     width: 198px;
     height: 225px;
     left: 77.54px;
-    top: 394px;
+    top: -500px;
 }
 
 
 .posts_new_img_title p1{
-    position: absolute;
     height: 26px;
     left: 16px;
     right: 81.33%;
@@ -139,7 +142,7 @@
 }
 
 .posts_new_img_title p3{
-    position: absolute;
+
     height: 26px;
     left: 324px;
     right: 43.2%;
@@ -158,11 +161,11 @@
 }
 
 .post_card_content{
-    position: absolute;
+    position: relative;
     width: 249px;
     height: 20px;
     left: 17px;
-    top: 418px;
+    top: 10px;
 
     font-family: Poppins;
     font-style: normal;
