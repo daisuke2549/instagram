@@ -28,7 +28,6 @@ gem 'trix'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'rmagick'
 gem 'jquery-rails'
 gem 'better_errors'
@@ -56,6 +55,7 @@ group :development do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec'
+  gem 'binding_of_caller'
 end
 
 group :test do
