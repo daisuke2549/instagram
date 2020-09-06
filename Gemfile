@@ -28,7 +28,7 @@ gem 'trix'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+
 gem 'rmagick'
 gem 'jquery-rails'
 
