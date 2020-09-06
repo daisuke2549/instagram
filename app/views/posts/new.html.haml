@@ -5,8 +5,6 @@
     .post_new_making_content
       %h1= f.text_field :content
       %h2
-        = f.label :avatar, 'アバター'
-      %h2
         = f.file_field :image
       %h3= f.submit 'アップロードする'
       %h4= link_to "ホームへ戻る", posts_path
