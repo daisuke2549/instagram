@@ -7,7 +7,6 @@ class PostsController < ApplicationController
     def new
       @post = Post.new
     end
-  
 
     def create
       @post = Post.new(post_params)
@@ -15,14 +14,16 @@ class PostsController < ApplicationController
         redirect_back(fallback_location: root_path)
       else
         redirect_back(fallback_location: root_path)
+      redirect_to "post_path"
       end
     end
+
 
     private
     def post_params
       params.require(:post).permit(
       :content,
-      :avatar
+      :image
     )
     end
 end
