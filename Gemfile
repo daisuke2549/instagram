@@ -27,6 +27,10 @@ gem 'trix'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc'
+<<<<<<< HEAD
+=======
+
+>>>>>>> image_post
 gem 'rmagick'
 gem 'jquery-rails'
 gem 'better_errors'

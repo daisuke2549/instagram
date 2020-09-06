@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_09_02_205812) do
+=======
+ActiveRecord::Schema.define(version: 2020_09_06_093846) do
+>>>>>>> image_post
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
