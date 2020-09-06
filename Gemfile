@@ -21,16 +21,19 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'devise'
 gem 'faker'
 gem 'hamlit'
 gem 'trix'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc'
+<<<<<<< HEAD
+=======
 
+>>>>>>> image_post
 gem 'rmagick'
 gem 'jquery-rails'
+gem 'better_errors'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -55,6 +58,7 @@ group :development do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec'
+  gem 'binding_of_caller'
 end
 
 group :test do
