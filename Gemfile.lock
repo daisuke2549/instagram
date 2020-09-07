@@ -59,14 +59,12 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
-<<<<<<< HEAD
     better_errors (2.7.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
-=======
     bcrypt (3.1.16)
->>>>>>> image_post
+
     bindex (0.8.1)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
@@ -253,11 +251,10 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-<<<<<<< HEAD
-=======
+
     warden (1.2.9)
       rack (>= 2.0.9)
->>>>>>> image_post
+
     web-console (4.0.4)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -288,10 +285,8 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-<<<<<<< HEAD
-=======
   devise
->>>>>>> image_post
+
   erb2haml
   faker
   hamlit
