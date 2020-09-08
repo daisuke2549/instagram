@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :posts, dependent: :destroy
 
-  def avatar_image
+  def avatar_images
     if profile&.avatar&.attached?
       profile.avatar
     else

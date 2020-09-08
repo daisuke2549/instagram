@@ -1,7 +1,8 @@
 class Post < ApplicationRecord
     has_many :comments, dependent: :destroy
-    has_one_attached :image
-    
-    def avatar_image
+    has_many_attached :images
+
+    def avatar_images
     end
+    
 end
