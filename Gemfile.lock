@@ -97,7 +97,7 @@ GEM
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
-<<<<<<< HEAD
+
     haml-rails (2.0.1)
       actionpack (>= 5.1)
       activesupport (>= 5.1)
@@ -105,9 +105,7 @@ GEM
       html2haml (>= 1.0.1)
       railties (>= 5.1)
     hamlit (2.11.0)
-=======
     hamlit (2.11.1)
->>>>>>> master
       temple (>= 0.8.2)
       thor
       tilt
