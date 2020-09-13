@@ -1,9 +1,9 @@
 .post_new_make_
   .post_new_making
     %h1 Profile image
-  = form_for @profile do |f|
-    .post_new_making_content
-      %h2
-        = f.file_field :image
-      %h3= f.submit 'アップロードする'
-      %h4= link_to "プロフィールへ戻る", profiles_path
+    = form_for @profile do |f|
+      .post_new_making_content
+        %h2
+          = f.file_field :image
+        %h3= f.submit 'アップロードする'
+        %h4= link_to "ホームへ戻る", profiles_path

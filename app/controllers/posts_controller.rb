@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
     def create
       @post = Post.create(post_params)
-      @post = Post.create params.require(:post).permit(:content, images:[])
+      @post = Post.create params.require(:post).permit(:content, :image)
       if @post.save
         redirect_back(fallback_location: root_path)
       else
@@ -25,7 +25,7 @@ class PostsController < ApplicationController
 
     def update
       @post = Post.find(params[:id])
-      @post.update params.require(:post).permit(:content,images:[]) # POINT
+      @post.update params.require(:post).permit(:content,:image) # POINT
       redirect_to @post
     end
 
@@ -33,6 +33,7 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(
       :subscribed,
+      :content,
       :image
     )
     end
