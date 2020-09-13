@@ -31,6 +31,7 @@ gem 'rmagick'
 gem 'jquery-rails'
 gem 'better_errors'
 gem "haml-rails"
+gem 'devise'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
