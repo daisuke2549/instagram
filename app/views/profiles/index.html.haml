@@ -4,7 +4,10 @@
   = image_tag 'Path 5.png', alt: 'profile_picture'
 .Profile_names_title DAISUKE SASAKI
 .Profile_picture
-  = image_tag 'Ellipse.png', alt: 'profile_picture'
+  = image_tag "Ellipse.png"
+.Profile_new_picture_post
+  %button{type: "button"} 
+    = link_to "Image_post", new_profile_path
 .Wifi_picture_profiles
 .Profile_posts
   %p Posts

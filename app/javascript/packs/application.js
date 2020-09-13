@@ -20,6 +20,13 @@ require("@rails/actiontext")
 
 import $ from 'jquery'
 
-document.addEventListener('DOMContentLoaded', () => {
-    window.alert('DOM LOADED')
+document.getElementById("Profile_picture img").onclick = function() {
+    // ここに#buttonをクリックしたら発生させる処理を記述する
+};
+
+document.addEventListener('turbolinks:load', () => {
+    setTimeout(function() {
+      $('.notice_pop-up p').fadeOut();
+  }, 5000);
 })
+
