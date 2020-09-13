@@ -7,6 +7,16 @@
 }
 
 
+.Profile_new_picture_post button{
+    margin-top:150px;
+    margin-left:230px;
+    width:84px;
+    background-color: pink;
+    color:white;
+    text-emphasis: none;
+}
+
+
 .post_card_image img{
     position: relative;
     width: 30px;
@@ -198,6 +208,10 @@ text-align: center;
 color: #333A42;
 }
 
+#profiles_image{
+    margin-top:200px;
+}
+
 .post_new_making_content h1{
     position: absolute;
     height: 36px;
@@ -261,7 +275,8 @@ color: #333A42;
     left: 5.87%;
     right: 46.4%;
     top: 290px;
-    
+ 
+    color:black;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -273,6 +288,11 @@ color: #333A42;
     color: #BDBDBD;
     mix-blend-mode: normal;
     opacity: 0.9;
+ a{
+    text-decoration: none;
+    color:black;
+ }
+
 }
 
 .file_upload{

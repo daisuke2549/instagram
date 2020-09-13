@@ -32,8 +32,8 @@ class PostsController < ApplicationController
     private
     def post_params
       params.require(:post).permit(
-      :content,
-      images:[]
+      :subscribed,
+      :image
     )
     end
 end
