@@ -30,3 +30,18 @@ document.addEventListener('turbolinks:load', () => {
   }, 5000);
 })
 
+$('#upload_file').on('change', function(){ // 解説①
+    var strFileInfo = $(#upload_file)[0].files[0]; // 解説②
+    if(strFileInfo && strFileInfo.type.match('image.*')){ // 解説③
+
+      $('#preview').remove();  // 解説④
+      $('#preview_area').append('<img id="preview" width="300" />'); // 解説⑤
+
+      fileReader = new FileReader(); // 解説⑥
+      fileReader.onload = function(event){
+        $('#preview').attr('src', event.target.result);
+      }
+
+      fileReader.readAsDataURL(strFileInfo); // 解説⑦
+    }
+  });
