@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: "profiles#index"
   resources :posts do
-    resources :comments , only: [:new, :create]
+    resources :comments, only: [:new, :create]
+    resource :like, only: [:create, :destroy]
   end
   resources :profiles
 end

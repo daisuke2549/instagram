@@ -45,3 +45,10 @@ $('#upload_file').on('change', function(){ // 解説①
       fileReader.readAsDataURL(strFileInfo); // 解説⑦
     }
   });
+
+
+  document.addEventListener('turbolinks:load', () => {
+    setTimeout(function() {
+      $('.notice_pop-up p').fadeOut();
+  }, 5000);
+  })

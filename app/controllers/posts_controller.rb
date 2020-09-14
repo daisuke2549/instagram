@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     def create
       @post = Post.create(post_params)
       @post = Post.create params.require(:post).permit(:content, :image)
-      if @post.save
+      if @post.save!
         redirect_back(fallback_location: root_path)
       else
         redirect_back(fallback_location: root_path)
