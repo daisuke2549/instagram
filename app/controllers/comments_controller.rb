@@ -1,28 +1,36 @@
 class CommentsController < ApplicationController
-
-    def index
-      post = Post.find(params[:post_id])
-      comments = post.comments
+  def new
+    post = Post.find(params[:post_id])
+    @comment = post.comments.build
+  end
+  def create
+    post = Post.find(params[:post_id])
+    @comment = post.comments.build(comment_params)
+    @comment.save!
+    if @comment.save
+      redirect_to task_path(task), notice: 'コメントを追加'
+    else
+      flash.now[:error] = '更新できませんでした'
+      render :new
     end
+  end
 
-    def new
-      post = Post.find(params[:post_id])
-      @comment = post.comments.build
-    end
+  def edit
+  end
 
-    def create
-      post = Post.find(params[:post_id])
-      @comment = post.comments.build(comment_params)
-      if @comment.save
-        redirect_to post_path(post), notice: 'コメントを追加'
-      else
-        flash.now[:error] = '更新できませんでした'
-        render :new
-      end
-    end
+  def update
+  end
 
-    private
-    def comment_params
-      params.require(:comment).permit(:content)
-    end
+  def destroy
+    @comment.destroy!
+  end
+
+  def set_comment
+    @comment = Comment.find_by(id: params[:id])
+  end
+
+  def comment_params
+    params.require(:comment).permit(:body)
+  end
+
 end

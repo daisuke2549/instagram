@@ -2,7 +2,8 @@
   .New_comments_page_title
     %p New Comment
   .New_comments_page_space
-    = form_with(model: @comment, url: posts_path(@comment.post), local: true) do |f|
+    = form_with(model: @comment, url: post_comments_path(@comment.post), local: true) do |f|
       %div
-      = f.text_area :content
-      = f.submit 'Submit', class: 'btn-primary'
+      = f.text_area :body
+      .New_comments_page_title_submit
+        = f.submit 'Submit', class: 'btn-primary'

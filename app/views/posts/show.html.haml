@@ -1,1 +1,16 @@
 = image_tag(@post.image) if @post.image.attached?
+.container.pt-5
+  .row.mb-3
+    .col-lg-8.offset-lg-2
+      = form_with(model: [@post, @comment], remote: true) do |f|
+        = f.label :body, t('.comment')
+        = f.text_area :body, class: "form-control mb-3", placeholder: "コメント" , rows: "4"
+        = f.submit t('.post'), class: "btn btn-primary"
+  = render 'comments/comments_area', comments: @comments
+  .show_comment_list
+  .show_comment_list
+  Comment
+- @comments.each do |comment|
+  .comment_title
+    .post_title_comment
+      = comment.body
