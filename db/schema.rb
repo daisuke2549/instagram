@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_17_104817) do
+ActiveRecord::Schema.define(version: 2020_09_17_223727) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 2020_09_17_104817) do
     t.integer "post_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "content"
     t.index ["account_id"], name: "index_comments_on_account_id"
     t.index ["post_id"], name: "index_comments_on_post_id"
   end
@@ -80,6 +81,8 @@ ActiveRecord::Schema.define(version: 2020_09_17_104817) do
     t.datetime "updated_at", precision: 6, null: false
     t.text "title"
     t.string "image"
+    t.integer "account_id"
+    t.index ["account_id"], name: "index_posts_on_account_id"
   end
 
   create_table "profiles", force: :cascade do |t|

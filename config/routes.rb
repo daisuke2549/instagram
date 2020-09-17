@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   root to: "profiles#index"
   resources :posts do
     resource :like, only: [:create, :destroy]
-    resources :comments, only: %i[new create]
+    resources :comments, only: [:new, :create]
   end
   
   resources :profiles

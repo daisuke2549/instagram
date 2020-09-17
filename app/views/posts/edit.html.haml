@@ -1,0 +1,11 @@
+.post_new_make_
+  .post_new_making
+    %h1 投稿ページ
+  = form_for @post do |f|
+    .post_new_making_content
+      %h1= f.text_field :content 
+      %br/
+      %h2
+        = f.file_field :image
+      %h3= f.submit 'アップロードする'
+      %h4= link_to "ホームへ戻る", posts_path

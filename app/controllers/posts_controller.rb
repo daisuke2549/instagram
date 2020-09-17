@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:show]
+  before_action :authenticate_account!, only: [:new, :create, :edit, :update, :destroy]
     def index
       @posts = Post.all
       @post = Post.new
@@ -6,11 +8,11 @@ class PostsController < ApplicationController
 
     def new
       @post = Post.new
+      @post = current_account.posts.build
     end
-
+  
     def create
-      @post = Post.create(post_params)
-      @post = Post.create params.require(:post).permit(:content, :image)
+      @post = current_account.posts.build(post_params)
       if @post.save!
         redirect_back(fallback_location: root_path)
       else
@@ -19,15 +21,22 @@ class PostsController < ApplicationController
       end
     end
 
+    def edit
+      @post = current_account.posts.find(params[:id])
+    end
+
     def show
-      @post = Post.find(params[:id])
-      @comment = Comment.new
+      @comments = @post.comments
     end
 
     def update
-      @post = Post.find(params[:id])
-      @post.update params.require(:post).permit(:content,:image) # POINT
-      redirect_to @post
+      @post = current_account.posts.find(params[:id])
+      if @post.update(post_params)
+        redirect_to post_path(@post), notice: '更新できました'
+      else
+       flash.now[:error] = '更新できませんでした'
+       render :edit
+     end
     end
 
     private
@@ -37,5 +46,9 @@ class PostsController < ApplicationController
       :content,
       :image
     )
+    end
+
+    def set_post
+      @post = Post.find(params[:id])
     end
 end
