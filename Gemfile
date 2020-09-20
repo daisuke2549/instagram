@@ -32,7 +32,7 @@ gem 'jquery-rails'
 gem 'better_errors'
 gem "haml-rails"
 gem 'devise'
-
+gem 'rails-i18n'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'mini_magick'
