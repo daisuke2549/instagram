@@ -2,15 +2,17 @@
 .container.pt-5
   .row.mb-3
     .col-lg-8.offset-lg-2
-      = form_with(model: [@post, @comment], remote: true) do |f|
+      = form_with(model: [@post], remote: true) do |f|
         = f.label :body, t('.comment')
         = f.text_area :body, class: "form-control mb-3", placeholder: "コメント" , rows: "4"
         = f.submit t('.post'), class: "btn btn-primary"
   = render 'comments/comments_area', comments: @comments
-  .show_comment_list
-  .show_comment_list
-  Comment
-- @comments.each do |comment|
-  .comment_title
-    .post_title_comment
-      = comment.body
+  .post
+  %h2 コメント一覧
+  - @comments.each do |comment|
+    .post_comment
+      %p= @comment.content
+    .container
+    = link_to new_post_comment_path(@article) do
+      .btn-secondary
+        コメントを追加

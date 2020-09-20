@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'comments/create'
-  get 'comments/edit'
-  get 'comments/update'
-  get 'comments/destroy'
   devise_for :accounts
   devise_scope :account do
     get '/accounts/sign_out' => 'devise/sessions#destroy'
@@ -12,7 +8,7 @@ Rails.application.routes.draw do
   root to: "profiles#index"
   resources :posts do
     resource :like, only: [:create, :destroy]
-    resources :comments, only: %i[new create]
+    resources :comments, only: [:new, :create, :show]
   end
   
   resources :profiles

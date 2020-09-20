@@ -3,16 +3,20 @@ class CommentsController < ApplicationController
     post = Post.find(params[:post_id])
     @comment = post.comments.build
   end
+
   def create
     post = Post.find(params[:post_id])
     @comment = post.comments.build(comment_params)
-    @comment.save!
     if @comment.save
-      redirect_to task_path(task), notice: 'コメントを追加'
+      redirect_to post_path(post), notice: 'コメントを追加'
     else
       flash.now[:error] = '更新できませんでした'
       render :new
     end
+    binding.pry
+  end
+
+  def show
   end
 
   def edit
@@ -25,12 +29,9 @@ class CommentsController < ApplicationController
     @comment.destroy!
   end
 
-  def set_comment
-    @comment = Comment.find_by(id: params[:id])
-  end
-
+  private
   def comment_params
-    params.require(:comment).permit(:body)
+    params.require(:comment).permit(:content)
   end
 
 end
