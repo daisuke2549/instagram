@@ -14,18 +14,19 @@ class PostsController < ApplicationController
     def create
       @post = current_account.posts.build(post_params)
       if @post.save!
-        redirect_back(fallback_location: root_path)
-      else
-        redirect_back(fallback_location: root_path)
-      redirect_to "post_path"
+          redirect_to posts_path(@post), notice: '保存できました'
+        else
+          flash.now[:error] = '保存に失敗しました'
+          render :new
       end
-    end
+  end
 
     def edit
       @post = current_account.posts.find(params[:id])
     end
 
     def show
+      @post = Post.find(params[:id])
       @comments = @post.comments
     end
 

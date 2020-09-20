@@ -4,7 +4,7 @@ class Post < ApplicationRecord
     has_many :likes, dependent: :destroy
     belongs_to :account, optional: true
     has_many :comments, dependent: :destroy
-    validates :body, presence: true
+    validates :content, presence: true
     def avatar_image
     end
 end

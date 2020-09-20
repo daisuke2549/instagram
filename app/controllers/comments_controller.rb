@@ -13,10 +13,10 @@ class CommentsController < ApplicationController
       flash.now[:error] = '更新できませんでした'
       render :new
     end
+    binding.pry
   end
 
   def show
-    @comments = @post.comments
   end
 
   def edit

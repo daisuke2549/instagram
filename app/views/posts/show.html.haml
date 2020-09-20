@@ -11,4 +11,8 @@
   %h2 コメント一覧
   - @comments.each do |comment|
     .post_comment
-      %p= comment.content
+      %p= @comment.content
+    .container
+    = link_to new_post_comment_path(@article) do
+      .btn-secondary
+        コメントを追加
