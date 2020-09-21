@@ -2,7 +2,8 @@
   = image_tag 'Path 4.png', alt: 'profile_picture'
 .Profile_back_button2
   = image_tag 'Path 5.png', alt: 'profile_picture'
-.Profile_names_title DAISUKE SASAKI
+.Profile_names_title 
+  = current_account.accountname
 .Profile_picture
   = image_tag(@profile.image) if @profile.image.attached?  
 .Profile_new_picture_post

@@ -3,14 +3,14 @@
 = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
   = render "devise/shared/error_messages", resource: resource
   .sign_in_header_account_field
-    = f.label :account
+    = f.label :accountname
     %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
+    = f.text_field :accountname
   .sign_in_header_password_field 
     = f.label :Email
 
     %br/
-    = f.password_field :Email, autocomplete: "new-password"
+    = f.email_field :email
   .sign_in_header_password_field 
     = f.label :password
     %br/

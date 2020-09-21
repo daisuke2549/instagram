@@ -4,7 +4,9 @@
     - @comments.each do |comment|
       .comments_account_detail
         = image_tag 'comment_default_image.png'
-        %p Account_name 
+        %p       
+        - if @post.account.present?
+          %p= @post.account.accountname
         .comments-container
 
 = javascript_pack_tag 'post'

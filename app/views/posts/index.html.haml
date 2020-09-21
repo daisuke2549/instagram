@@ -5,7 +5,8 @@
         .post_card_image
           = image_tag 'Ellipse (2).png'
         .post_card_title_comment
-          %p1 Jmax_21
+          %p1 
+            = current_account.accountname
           %p3= post.display_created_at
           .post_card_picture1
             = image_tag 'Rectangle (7).png'

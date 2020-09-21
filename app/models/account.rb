@@ -14,4 +14,12 @@ class Account < ApplicationRecord
   def has_liked?(post)
     likes.exists?(post_id: post.id)
   end
+
+  def display_name
+    self.email.split('@').first
+  end
+  def author_name
+    account.display_name
+  end
 end
+
