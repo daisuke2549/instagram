@@ -24,7 +24,12 @@ class CommentsController < ApplicationController
    end
   end
 
-
+  def destroy
+    @comment.destroy
+    flash[:success] = "コメントが削除されました"
+    redirect_to request.referrer || root_url
+  end
+ 
 
 
   private
