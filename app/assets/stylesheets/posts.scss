@@ -38,13 +38,15 @@
     padding-top:10px;
 } 
 .post_comment {
-
-    height: 70px;
-    width: 280px;
-    left: 62px;
-    top: 152px;
-    position: relative;
+    height: 182px;
+    width: 327px;
+    left: 15px;
+    top: 122px;   
     
+p{
+    white-space: nowrap
+}
+
 }
 .post_comment_account_name p2{
    
@@ -121,8 +123,8 @@
     position: relative;
     width: 198px;
     height: 225px;
-    left: 17px;
-    top: -154px;
+    left: 37px;
+    top: -174px;
 }
 
 .post_card_picture_below p2{
@@ -138,8 +140,8 @@
     position: relative;
     width: 198px;
     height: 225px;
-    left: 77.54px;
-    top: -500px;
+    left: 57.54px;
+    top: -423px;
 }
 
 
@@ -344,3 +346,84 @@ color: #333A42;
     top:25px;
     
 }
+
+.New_comments_page_title p{
+    height: 26px;
+    width: 52px;
+    left: 161px;
+    top: 45px;
+    position: relative;
+}
+.New_comments_page_title p2{
+    height: 26px;
+    width: 52px;
+    left: 324px;
+    top: 5px;
+    position: relative;
+}
+
+.New_comments_page_title a{
+    height: 26px;
+    width: 54px;
+    left: 16px;
+    top: 85px;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.New_comments_page_space textarea{
+    height: 50px;
+    width: 370px;
+    left: 16px;
+    top: 87px;
+    position: relative;
+
+}
+
+.New_comments_page_title_submit {
+    height: 24px;
+    width: 73px;
+    left: 16px;
+    top: 88px;
+    position: relative;
+}
+
+.New_comments_page_account_name {
+p{    height: 26px;
+    width: 102px;
+    left: 74px;
+    top: 98px;
+    position: relative;
+}
+
+img{
+    width: 20px;
+    height:20px;
+    left: 16px;
+    top: 144px;
+
+    position: relative;
+}
+
+}
+
+.comments_account_detail{
+p{
+    height: 24px;
+    width: 55px;
+    left: 62px;
+    top: 122px;
+    position: relative;
+}
+
+img{
+    width: 20px;
+    height:20px;
+    left: 22px;
+    top: 165px;
+    border-radius: 0px;
+    position: relative;
+}
+}
+

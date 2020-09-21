@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root to: "profiles#index"
   resources :posts do
     resource :like, only: [:create, :destroy]
-    resources :comments, only: [:new, :create, :show]
+    resources :comments, only: [:index, :new, :create]
   end
   
   resources :profiles

@@ -1,9 +1,10 @@
-.container
+.container#post-show{data: {post_id: @post.id}}
   .post_comment_list_top
     %p1= Comment
-  - @comments.each do |comment|
-    .post_comment_list_display  
-      .post_comment_account_name
-        %p2= comment.content
-      .post_comment
-        %p4= comment.content
+    - @comments.each do |comment|
+      .comments_account_detail
+        = image_tag 'comment_default_image.png'
+        %p Account_name 
+        .comments-container
+
+= javascript_pack_tag 'post'

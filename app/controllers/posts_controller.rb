@@ -24,11 +24,11 @@ class PostsController < ApplicationController
     def edit
       @post = current_account.posts.find(params[:id])
     end
-
-    def show
+    def show 
       @post = Post.find(params[:id])
       @comments = @post.comments
     end
+ 
 
     def update
       @post = current_account.posts.find(params[:id])
