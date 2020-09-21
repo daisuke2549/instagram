@@ -6,6 +6,8 @@ class Account < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_one :profile, dependent: :destroy
+  delegate :birthday, :age, :gender, to: :profile, allow_nil: true
   
   def has_written?(post)
     posts.exists?(id: post.id)
@@ -18,8 +20,8 @@ class Account < ApplicationRecord
   def display_name
     self.email.split('@').first
   end
-  def author_name
-    account.display_name
+  def prepare_profile
+    profile || build_profile
   end
 end
 

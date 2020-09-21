@@ -31,7 +31,8 @@ class PostsController < ApplicationController
  
 
     def update
-      @post = current_account.posts.find(params[:id])
+      @profile = current_account.prepare_profile
+      @profile.assign_attributes(profile_params)
       if @post.update(post_params)
         redirect_to post_path(@post), notice: '更新できました'
       else
@@ -45,7 +46,7 @@ class PostsController < ApplicationController
     private
     def post_params
       params.require(:post).permit(
-      :subscribed,
+
       :content,
       :image
     )
