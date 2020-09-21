@@ -6,8 +6,9 @@
     - @comment.errors.full_messages.each do |message|
       %li= message
   .New_comments_page_account_name
-    = image_tag 'comment_default_image.png'
-    %p Account_name 
+    = image_tag current_account.avatar_image
+    %p 
+      = current_account.accountname
   .New_comments_page_space
     = form_with(model: @comment, url: post_comments_path(@comment.post), local: true) do |f|
       %div 

@@ -1,0 +1,31 @@
+.header_logos
+  - if !current_page?(root_path)
+    = link_to :back do
+      = image_tag 'back.jpg', class: 'header_back'
+.Profile_names_title 
+  = current_account.accountname
+.Profile_picture
+  = image_tag current_account.avatar_image
+.Profile_new_picture_post
+  %button{type: "button"} 
+    = link_to "Image_post", new_post_path
+.Wifi_picture_profiles
+.Profile_posts
+  %p Posts
+.Profile_followers
+  %p Followers
+.Profile_following
+  %p Following
+
+.Profile_picture2
+  = image_tag 'Rectangle (1).png', alt: 'profile_picture'
+.Profile_picture3
+  = image_tag 'Rectangle (2).png', alt: 'profile_picture'
+.Profile_picture4
+  = image_tag 'Rectangle (3).png', alt: 'profile_picture'
+.Profile_picture5
+  = image_tag 'Rectangle (4).png', alt: 'profile_picture'
+.Profile_picture6
+  = image_tag 'Rectangle (5).png', alt: 'profile_picture'
+.Profile_picture7
+  = image_tag 'Rectangle (6).png', alt: 'profile_picture'

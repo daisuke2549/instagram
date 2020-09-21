@@ -3,8 +3,8 @@
     %p1= Comment
     - @comments.each do |comment|
       .comments_account_detail
-        = image_tag 'comment_default_image.png'
-        %p       
+        - if @post.account.present?
+          %p= @post.account.display_name
         - if @post.account.present?
           %p= @post.account.accountname
         .comments-container

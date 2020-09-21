@@ -27,6 +27,9 @@ class ProfilesController < ApplicationController
           render :edit
         end
       end
+
+      def index
+      end
   
 private
    def profile_params
@@ -35,7 +38,7 @@ private
       :introduction,
       :gender,
       :birthday,
-
+      :image
     )
    end
 
