@@ -1,0 +1,15 @@
+.sign_in_header_field
+  = image_tag 'Rectangle.png'
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .sign_in_header_email_field
+      = f.label :email
+      %br/
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+    .sign_in_header_password_field 
+      = f.label :password
+      %br/
+      = f.password_field :password, autocomplete: "current-password"
+    .link_to_account_registration  
+      - if devise_mapping.registerable? && controller_name != 'registrations'
+        = link_to "LOGIN", new_registration_path(resource_name)
+        %br/

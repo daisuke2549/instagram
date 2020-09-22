@@ -1,13 +1,14 @@
-.Profile_back_button1
-  = image_tag 'Path 4.png', alt: 'profile_picture'
-.Profile_back_button2
-  = image_tag 'Path 5.png', alt: 'profile_picture'
-.Profile_names_title DAISUKE SASAKI
+.header_logos
+  - if !current_page?(root_path)
+    = link_to :back do
+      = image_tag 'back.jpg', class: 'header_back'
+.Profile_names_title 
+  = current_account.accountname
 .Profile_picture
-  = image_tag(@profile.image) if @profile.image.attached?  
+  = image_tag current_account.avatar_image
 .Profile_new_picture_post
   %button{type: "button"} 
-    = link_to "Image_post", new_profile_path
+    = link_to "Image_post", new_post_path
 .Wifi_picture_profiles
 .Profile_posts
   %p Posts
@@ -15,8 +16,7 @@
   %p Followers
 .Profile_following
   %p Following
-.Profile_picture
-  = image_tag 'Ellipse.png', alt: 'profile_picture'
+
 .Profile_picture2
   = image_tag 'Rectangle (1).png', alt: 'profile_picture'
 .Profile_picture3

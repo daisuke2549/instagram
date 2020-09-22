@@ -1,0 +1,138 @@
+.sign_in_header_field{
+
+img{
+    height: 298px;
+    width: 375px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+
+}
+}
+
+.sign_in_header_email_field {
+
+label{    height: 17px;
+    width: 31px;
+    left: 16px;
+    top: 3px;
+    position: relative;
+}
+
+input{
+    height: 20px;
+    width: 343px;
+    left: 16px;
+    position: relative;
+    top: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+}
+
+
+.sign_in_header_password_field {
+
+    label{    height: 17px;
+        width: 31px;
+        left: 16px;
+        top: 3px;
+        position: relative;
+    }
+    
+    em{
+        position: relative;
+        left:10px;
+        top:2px;
+    }
+    input{
+        height: 20px;
+        width: 343px;
+        left: 16px;
+        position: relative;
+        top: 1px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+    }
+
+
+.action_forget_password_link{
+    height: 17px;
+    width: 98px;
+    left: 215px;
+    font-size: small;
+    position: relative;
+    white-space: nowrap
+
+}
+
+.link_to_account_registration  {
+
+    height: 48px;
+    width: 343px;
+    left: 16px;
+    top: 328px;
+    border-radius: 0px;
+    position: relative;
+    background-color: yellow;
+    font-weight: bold;
+a{
+    text-decoration: none;
+    height: 21px;
+    width: 42px;
+    left: 140px;
+    top:10px;
+    position: relative;
+    color:black;
+    font-weight: bold;
+
+}    
+}
+
+
+.sign_in_header_account_field{
+label{    height: 17px;
+    width: 31px;
+    left: 16px;
+    top: 3px;
+    position: relative;
+}
+
+input{
+    height: 20px;
+    width: 343px;
+    left: 16px;
+    position: relative;
+    top: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+}
+
+.actions_account_registration  {
+input{
+    height: 48px;
+    width: 343px;
+    left: 16px;
+    top: 328px;
+    border-radius: 0px;
+    position: relative;
+    background-color: yellow;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    height: 21px;
+    width: 42px;
+    left: 140px;
+    top:10px;
+    position: relative;
+    color:black;
+    font-weight: bold;
+
+}    
+}

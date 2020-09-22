@@ -1,2 +1,12 @@
-- if @profile.image.attached?
-    = image_tag @profile.image
+.container.profilePage
+  .profilePage_user
+    .profilePage_user_image
+      = image_tag current_account.avatar_image
+    .profilePage_user_basicInfo
+    .profilePage_user_name
+      .profilePage_user_displayName
+        #{current_account.display_name}（#{current_account.age}・#{I18n.t("enum.genders.#{current_account.gender}")}）
+        .profilePage_user_action
+          = link_to 'Edit', edit_profile_path
+      .profilePage_user_introduction
+        = current_account.profile&.introduction

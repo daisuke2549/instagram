@@ -1,8 +1,17 @@
 .New_comments_page
   .New_comments_page_title
-    %p New Comment
+    = link_to 'Cance', posts_path(@post)
+    %p Status
+    %p2 Post
+    - @comment.errors.full_messages.each do |message|
+      %li= message
+  .New_comments_page_account_name
+    = image_tag current_account.avatar_image
+    %p 
+      = current_account.accountname
   .New_comments_page_space
-    = form_with(model: @comment, url: posts_path(@comment.post), local: true) do |f|
-      %div
+    = form_with(model: @comment, url: post_comments_path(@comment.post), local: true) do |f|
+      %div 
       = f.text_area :content
-      = f.submit 'Submit', class: 'btn-primary'
+      .New_comments_page_title_submit
+        = f.submit '＋Album', class: 'btn-primary'

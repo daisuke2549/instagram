@@ -1,13 +1,7 @@
 class ProfilesController < ApplicationController
-    def index
-        @profiles = Profile.all
-        @profile = Profile.new
-    end
-    def show 
-        @profile = Profile.find(params[:id])
-      end
-    def new
-        @profile = Profile.new
+     before_action :authenticate_account!
+    def show
+        @profile = current_account.profile
       end
   
       def create
@@ -19,22 +13,33 @@ class ProfilesController < ApplicationController
           redirect_back(fallback_location: profiles_path)
         end
       end
-  
-      def show
-        @profile = Profile.find(params[:id])
+
+      def edit
+        @profile = current_account.prepare_profile
       end
-  
+
       def update
-        @profile = Profile.find(params[:id])
-        @profile.update params.require(:profile).permit(:image) # POINT
-        redirect_to @profile
+        @profile = current_account.build_profile(profile_params)
+        if @profile.save
+          redirect_to profile_path, notice: 'プロフィール更新！'
+        else
+          flash.now[:error] = '更新できませんでした'
+          render :edit
+        end
+      end
+
+      def index
       end
   
-      private
-      def profile_params
-        params.require(:profile).permit(
-        :image
-      )
-      end
+private
+   def profile_params
+    params.require(:profile).permit(
+      :nickname,
+      :introduction,
+      :gender,
+      :birthday,
+      :image
+    )
+   end
 
 end

@@ -1,85 +1,166 @@
-// Place all the styles related to the Profiles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-.Profile_time{
-    background-color: blue;
-    width:100px;
-}
 
+
+ $image_size: 56px;
+
+
+ .profilePage_user_displayName{
+     position: relative;
+     top:100px;
+     left:-70px;
+     border:none;
+ }
+
+ .profilePage_user_action{
+  
+  
+  a{
+    position: relative;
+  top:-25px;
+  left:190px;
+  text-decoration: none;
+  
+}
+ }
+
+ .profilePage {
+   margin-top: 24px;
+
+   &_user {
+     display: flex;
+
+     &_image {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+       img {
+         width: $image_size;
+         height: $image_size;
+       }
+     }
+
+     &_basicInfo {
+       margin-left: 16px;
+     }
+
+     &_actionButton {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       font-size: 12px;
+       border-radius: 4px;
+       border: 1px solid ;
+       font-weight: bold;
+       padding: 0px 8px;
+
+     }
+
+     &_name {
+       display: flex;
+       margin-bottom: 8px;
+     }
+
+     &_displayName {
+       font-size: 18px;
+       font-weight: bold;
+       margin-right: 8px;
+     }
+
+     &_introduction {
+       font-size: 12px;
+     }
+   }
+ }
+
+ .profilePage_user_introduction{
+   position: relative;
+   top:10px;
+   left:-250px;
+ }
+
+ .profilePage_user_image img{
+   position: relative;
+   left:200px;
+ }
+
+
+ .Profile_time{
+  background-color: blue;
+  width:100px;
+}
 .Profile_back_button1 img{
-    left: 4.27%;
-    right: 94.4%;
-    top: 4.0%;
+  left: 4.27%;
+  right: 94.4%;
+  top: 4.0%;
 }
-
-
 .Profile_back_button2 img{
-    left: 4.53%;
-    right: 91.2%;
-    top: 4.96%;
-    bottom: 92.73%;
+  left: 4.53%;
+  right: 91.2%;
+  top: 4.96%;
+  bottom: 92.73%;
 }
-
-
 .Profile_names_title{
-    position: absolute;
-    height: 24px;
-    left: 121px;
-    right: 38.4%;
-    top: 46px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-
-    color: #333A42;
+  position: absolute;
+  height: 24px;
+  left: 121px;
+  right: 38.4%;
+  top: 46px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #333A42;
 }
-
 .Profile_back_button1{
-   
-    position: absolute;
-    left: 2.07%;
-    right: 94.4%;
-    top: 5.6%;
-    bottom: 92.12%;
+ 
+  position: absolute;
+  left: 2.07%;
+  right: 94.4%;
+  top: 5.6%;
+  bottom: 92.12%;
 }
 
+.Profile_names_title {
+  height: 24px;
+  width: 88px;
+  left: 163px;
+  top: 46px;
+
+}
 
 .Profile_back_button2{
-    position: absolute;
-    left: 2.33%;
-    right: 91.2%;
-    top: 4.90%;
-    bottom: 92.73%; 
-
+  position: absolute;
+  left: 2.33%;
+  right: 91.2%;
+  top: 4.90%;
+  bottom: 92.73%; 
 }
-
 .Wifi_picture_profiles{
-    position: absolute;
-    left: 85.6%;
-    right: 13.16%;
-    top: 56.64%;
-    bottom: 35.69%;
-    background: #DADADA;
+  position: absolute;
+  left: 85.6%;
+  right: 13.16%;
+  top: 56.64%;
+  bottom: 35.69%;
+  background: #DADADA;
 }
-
-
 .Profile_picture{
-    position: absolute;
-    width: 76.88px;
-    height: 76.88px;
-    left: 148.56px;
-    top: 105.56px; 
-    background: url(c3e3289402158a588d3d5ef651216695.jpg), url(c5c67580205963.jpg), url(Checker.png);
+  position: absolute;  
+  width: 76.88px;
+  height: 76.88px;
+  left: 148.56px;
+  top: 105.56px; 
+  background: url(c3e3289402158a588d3d5ef651216695.jpg), url(c5c67580205963.jpg), url(Checker.png);
+img{
+  width:50px;
+  height: 70px;
+}
 }
 .Profile_picture2{
-    position: absolute;
+  position: absolute;
 width: 207px;
 height: 192px;
 left: 16px;
@@ -87,100 +168,89 @@ top: 318px;
 // background: url(Rectangle (1).png), url(Checker.png);
 }
 .Profile_picture3{
-    position: absolute;
+  position: absolute;
 width: 128px;
 height: 92px;
 left: 231px;
 top: 318px;
 // background: url(Rectangle (2).png), #C4C4C4;
 }
-
 .Profile_picture4{
-    position: absolute;
-    width: 128px;
-    height: 92px;
-    left: 231px;
-    top: 418px;
-    // background: url(Rectangle (3).png);
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 231px;
+  top: 418px;
+  // background: url(Rectangle (3).png);
 }
 .Profile_picture5{
-    position: absolute;
-    width: 128px;
-    height: 92px;
-    left: 16px;
-    top: 518px;
-    // background: url(Rectangle (4).png);
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 16px;
+  top: 518px;
+  // background: url(Rectangle (4).png);
 }
 .Profile_picture6{
-    position: absolute;
-    width: 128px;
-    height: 92px;
-    left: 16px;
-    top: 618px;
-    // background: url(Rectangle (5).png);
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 16px;
+  top: 618px;
+  // background: url(Rectangle (5).png);
 }
 .Profile_picture7{
-    position: absolute;
-    width: 207px;
-    height: 192px;
-    left: 152px;
-    top: 518px;
-    background: url(682f6b65413447);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  width: 207px;
+  height: 192px;
+  left: 152px;
+  top: 518px;
+  background: url(682f6b65413447);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-
-
-
 .Profile_posts{
-    position: absolute;
-    width: 38px;
-    height: 23px;
-    left: 75px;
-    top: 253px;
-    
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #9E9E9E;
+  position: absolute;
+  width: 38px;
+  height: 23px;
+  left: 75px;
+  top: 253px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #9E9E9E;
 }
-
-
 .Profile_followers{
-    position: absolute;
-    width: 66px;
-    height: 23px;
-    left: 152px;
-    top: 253px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-
-    color: #9E9E9E;
+  position: absolute;
+  width: 66px;
+  height: 23px;
+  left: 152px;
+  top: 253px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #9E9E9E;
 } 
-
 .Profile_following{
-    position: absolute;
-    width: 67px;
-    height: 23px;
-    left: 249px;
-    top: 253px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-
-    color: #9E9E9E;
+  position: absolute;
+  width: 67px;
+  height: 23px;
+  left: 249px;
+  top: 253px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #9E9E9E;
 }
