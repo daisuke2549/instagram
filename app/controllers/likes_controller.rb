@@ -3,6 +3,7 @@ class LikesController < ApplicationController
 
 
   def create
+    binding.pry
     post = Post.find(params[:post_id])
     post.likes.create!(account_id: current_account.id)
     redirect_to post_path(post)
