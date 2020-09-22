@@ -5,7 +5,7 @@
     .profilePage_user_basicInfo
     .profilePage_user_name
       .profilePage_user_displayName
-        #{current_account.display_name}（#{current_account.age}・#{I18n.t("enum.genders.#{current_account.gender}")}）
+        #{current_account.accountname}（#{current_account.age}・#{I18n.t("enum.genders.#{current_account.gender}")}）
         .profilePage_user_action
           = link_to 'Edit', edit_profile_path
       .profilePage_user_introduction

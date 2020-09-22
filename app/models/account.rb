@@ -31,6 +31,9 @@ class Account < ApplicationRecord
       'Ellipse.png'
     end
   end
-
+  
+  def post_count
+    posts.count
+  end
 end
 

@@ -23,7 +23,7 @@
                 = image_tag 'heart-active.svg'
             - else
               .post_heart_show
-                = link_to post_like_path(@post), data: { method: 'post' } do
+                = link_to post_path(@post), data: { method: 'post' } do
                   = image_tag 'heart.svg'
           .post_card_content_show
             = @post.content

@@ -1,9 +1,8 @@
-.container#post-show{data: {post_id: @post.id}}
+.container
   .post_comment_list_top
     %p1= Comment
-    - @comments.each do |comment|
-      .comments_account_detail
-        = image_tag current_account.avatar_image
-        %p= @post.account.accountname
-        .comments-container
+    .comments_account_detail
+      = image_tag current_account.avatar_image
+
+      .comments-container
 = javascript_pack_tag 'post'
