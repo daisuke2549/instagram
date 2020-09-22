@@ -76,10 +76,16 @@ p{
     color: #333333;
 }
 
+<<<<<<< HEAD
+.post_card_title_comment p2{
+    position: relative;
+=======
 .post_card_title_comment p3{
     position:relative;
+>>>>>>> master
     width: 72px;
     height: 20px;
+    white-space: nowrap;
     left: 55px;
     top: 65px;
     font-family: Poppins;
@@ -131,8 +137,8 @@ p{
     position: relative;
     width: 198px;
     height: 225px;
-    left: 47px;
-    top: -380px;
+    left: 60px;
+    top: -410px;
 }
 
 
@@ -179,8 +185,7 @@ p{
     line-height: 24px;
     display: flex;
     align-items: center;
-    text-align: center;
-
+    text-align: center;  
     color: #333A42;
 }
 

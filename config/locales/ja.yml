@@ -212,4 +212,8 @@ ja:
       short: "%m/%d %H:%M"
     pm: 午後
 
+<<<<<<< HEAD
   account.signed_out:  ログアウトしました
+=======
+  account.signed_out:  ログアウトしました
+>>>>>>> master

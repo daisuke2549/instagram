@@ -7,7 +7,12 @@
         .post_card_title_comment
           %p1 
             = current_account.accountname
+<<<<<<< HEAD
+          %p2
+            = post.display_created_at
+=======
           %p3= post.display_created_at
+>>>>>>> master
           .post_card_picture1
             = image_tag 'Rectangle (7).png'
           .post_card_picture2
@@ -17,7 +22,7 @@
           .post_card_picture_below
             %p1= image_tag 'Vector2.png'
             %p2= image_tag 'Vector3.png'
-            %p3= image_tag 'Vector2.png'
+  
             - if account_signed_in?
               -if current_account.has_liked?(post)
                 .post_like_heart
