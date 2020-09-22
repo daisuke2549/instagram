@@ -3,10 +3,7 @@
     %p1= Comment
     - @comments.each do |comment|
       .comments_account_detail
-        - if @post.account.present?
-          %p= @post.account.display_name
-        - if @post.account.present?
-          %p= @post.account.accountname
+        = image_tag current_account.avatar_image
+        %p= @post.account.accountname
         .comments-container
-
 = javascript_pack_tag 'post'
