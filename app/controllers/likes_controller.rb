@@ -2,17 +2,11 @@ class LikesController < ApplicationController
   before_action :authenticate_account!
 
 
- 
-    def create
-      post = Post.find(params[:post_id])
-      post.likes.create!(account_id: current_account.id)
-      redirect_to post_path(post)
-    end
-
   def create
     post = Post.find(params[:post_id])
     post.likes.create!(account_id: current_account.id)
-    redirect_to article_path(post)
+    redirect_to post_path(post)
+  end
 
   def destroy
     post = Post.find(params[:post_id])
@@ -20,6 +14,5 @@ class LikesController < ApplicationController
 
     like.destroy!
     redirect_to article_path(article)
-  end
   end
 end

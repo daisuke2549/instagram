@@ -1,9 +1,25 @@
-.container#post-show{data: {post_id: @post.id}}
-  .post_comment_list_top
-    %p1= Comment
-    - @comments.each do |comment|
-      .comments_account_detail
-        = image_tag current_account.avatar_image
-        %p= @post.account.accountname
-        .comments-container
-= javascript_pack_tag 'post'
+.container_show
+  .post_card_image_tag_show
+    .post-post_card_image_tag_title_show
+      .post_card_image_show
+        = image_tag 'Ellipse (2).png'
+      .post_card_title_comment_show
+        %p2
+          = current_account.accountname
+        %p2
+          = @post.display_created_at
+        .post_card_picture1_show
+          = image_tag 'Rectangle (7).png'
+        .post_card_picture2_show
+          = image_tag 'Rectangle (8).png'
+        .post_card_picture3_show
+          = image_tag 'Rectangle (9).png'
+        .post_card_picture_below_show
+          %p1= image_tag 'Vector2.png'
+          %p2= image_tag 'Vector3.png'
+          - if account_signed_in?
+            .post_heart_show
+              = link_to post_like_path(@post), data: { method: 'post' } do
+                = image_tag 'heart.svg'
+          .post_card_content_show
+            = @post.content

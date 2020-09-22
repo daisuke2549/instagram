@@ -18,3 +18,14 @@
  @import 'posts';
  @import 'common';
  @import 'profile';
+
+    
+    .post_card_picture1_show img{
+        height: 225px;
+        width: 198px;
+        left: 17px;
+        top: 157px;
+        border-radius: 0px;
+        position: relative;
+    }
+    

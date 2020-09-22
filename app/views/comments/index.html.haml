@@ -1,7 +1,9 @@
-.container_posts_comment
-  .Profile_back_button3
-    = image_tag 'Path 4.png', alt: 'profile_picture'
-  .Profile_back_button4
-    = image_tag 'Path 5.png', alt: 'profile_picture'
-  .Profile_posts_comment
-    %p Comment
+.container#post-show{data: {post_id: @post.id}}
+  .post_comment_list_top
+    %p1= Comment
+    - @comments.each do |comment|
+      .comments_account_detail
+        = image_tag current_account.avatar_image
+        %p= @post.account.accountname
+        .comments-container
+= javascript_pack_tag 'post'

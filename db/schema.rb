@@ -61,13 +61,7 @@ ActiveRecord::Schema.define(version: 2020_09_21_120430) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "content"
-
-    t.integer "account_id"
-
-    t.integer "account_id"
-
     t.integer "account_id", null: false
-
     t.index ["post_id"], name: "index_comments_on_post_id"
   end
 
