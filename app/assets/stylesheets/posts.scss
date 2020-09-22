@@ -65,6 +65,7 @@ p{
     align-items: center;
     color: #333333;
 }
+<<<<<<< HEAD
 .post_card_title_comment p2{
     position:relative;
     width: 72px;
@@ -80,8 +81,16 @@ p{
     align-items: center;
     color: #9E9E9E;
 }
+=======
+
+<<<<<<< HEAD
+.post_card_title_comment p2{
+    position: relative;
+=======
+>>>>>>> fbaf52425eba016a21cd145eba80932f9e167d68
 .post_card_title_comment p3{
     position:relative;
+>>>>>>> master
     width: 72px;
     height: 20px;
     white-space: nowrap;
@@ -130,8 +139,13 @@ p{
     position: relative;
     width: 198px;
     height: 225px;
+
     left: 67px;
     top: -400px;
+
+    left: 60px;
+    top: -410px;
+
 }
 .post_card_picture_below p3{
     position: relative;
@@ -171,7 +185,11 @@ p{
     line-height: 24px;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     text-align: center;
+=======
+    text-align: center;  
+>>>>>>> fbaf52425eba016a21cd145eba80932f9e167d68
     color: #333A42;
 }
 .posts_new_img_title p3{

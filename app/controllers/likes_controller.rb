@@ -1,6 +1,6 @@
 class LikesController < ApplicationController
-
   before_action :authenticate_account!
+
 
  
     def create
@@ -8,7 +8,6 @@ class LikesController < ApplicationController
       post.likes.create!(account_id: current_account.id)
       redirect_to post_path(post)
     end
-
 
   def create
     post = Post.find(params[:post_id])
