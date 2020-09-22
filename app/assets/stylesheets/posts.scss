@@ -3,10 +3,7 @@
     position: relative;
     margin-top:-500px;
     font-weight: bold;
-
 }
-
-
 .Profile_new_picture_post button{
     margin-top:150px;
     margin-left:230px;
@@ -15,8 +12,6 @@
     color:white;
     text-emphasis: none;
 }
-
-
 .post_card_image img{
     position: relative;
     width: 30px;
@@ -25,7 +20,6 @@
     top: 109px;
     background: url(6e4c2cf37c6c69746d2969655b96afa8.jpg), url(Checker.png);
 }
-
 .post_comment_list_top p1{
     height: 24px;
     width: 83px;
@@ -33,7 +27,6 @@
     top: 46px;
     position: relative;
 }
-
 .post_comment_list_display {
     padding-top:10px;
 } 
@@ -46,7 +39,6 @@
 p{
     white-space: nowrap
 }
-
 }
 .post_comment_account_name p2{
    
@@ -57,8 +49,6 @@ p{
     position: relative;
     white-space: nowrap;
 }
-
-
 .post_card_title_comment p1{
     position: relative;
     width: 64px;
@@ -75,13 +65,23 @@ p{
     align-items: center;
     color: #333333;
 }
-
 .post_card_title_comment p2{
-    position: relative;
-
+    position:relative;
+    width: 72px;
+    height: 20px;
+    left: 55px;
+    top: 65px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+}
 .post_card_title_comment p3{
     position:relative;
-
     width: 72px;
     height: 20px;
     white-space: nowrap;
@@ -96,15 +96,12 @@ p{
     align-items: center;
     color: #9E9E9E;
 }
-
-
 .post_card_picture1{
     position: relative;
     width: 198px;
     height: 225px;
     left: 17px;
     top: 129px;
-
 }
 .post_card_picture2{
     position: relative;
@@ -114,7 +111,6 @@ p{
     top: -100px;
     background: url(01938081188193.jpg), #C4C4C4;
 }
-
 .post_card_picture3{
     position: relative;
     width: 138px;
@@ -123,7 +119,6 @@ p{
     top: -90px;
     background: url(9ea7a781188193.jpg), #C4C4C4;
 }
-
 .post_card_picture_below p1{
     position: relative;
     width: 198px;
@@ -131,16 +126,13 @@ p{
     left: 37px;
     top: -174px;
 }
-
 .post_card_picture_below p2{
     position: relative;
     width: 198px;
     height: 225px;
-    left: 60px;
-    top: -410px;
+    left: 67px;
+    top: -400px;
 }
-
-
 .post_card_picture_below p3{
     position: relative;
     width: 198px;
@@ -148,8 +140,6 @@ p{
     left: 57.54px;
     top: -423px;
 }
-
-
 .posts_new_img_title p1{
     height: 26px;
     left: 16px;
@@ -168,33 +158,12 @@ p{
     
     color: #2F80ED;
 }
-
-
 .posts_new_img_title p2{
     position: absolute;
     height: 26px;
     left: 161px;
     right: 43.2%;
     top: 46px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;  
-    color: #333A42;
-}
-
-.posts_new_img_title p3{
-
-    height: 26px;
-    left: 324px;
-    right: 43.2%;
-    top: 46px;
-
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -203,17 +172,29 @@ p{
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #333A42;
 }
-
+.posts_new_img_title p3{
+    height: 26px;
+    left: 324px;
+    right: 43.2%;
+    top: 46px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333A42;
+}
 .post_card_content{
     position: relative;
     width: 249px;
     height: 20px;
     left: 17px;
     top: 10px;
-
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -221,17 +202,14 @@ p{
     line-height: 18px;
     display: flex;
     align-items: center;
-
     color: #333333;
 }
-
 .post_new_making{
     position: absolute;
 height: 26px;
 left: 161px;;
 right: 43.2%;
 top:46px;
-
 font-family: Poppins;
 font-style: normal;
 font-weight: 500;
@@ -240,14 +218,11 @@ line-height: 24px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #333A42;
 }
-
 #profiles_image{
     margin-top:200px;
 }
-
 .post_new_making_content h1{
     position: absolute;
     height: 36px;
@@ -328,9 +303,7 @@ color: #333A42;
     text-decoration: none;
     color:black;
  }
-
 }
-
 .file_upload{
     margin-top:235px;
     padding-right:120px;
@@ -350,7 +323,6 @@ color: #333A42;
     top:25px;
     
 }
-
 .New_comments_page_title p{
     height: 26px;
     width: 52px;
@@ -365,7 +337,6 @@ color: #333A42;
     top: 5px;
     position: relative;
 }
-
 .New_comments_page_title a{
     height: 26px;
     width: 54px;
@@ -373,18 +344,14 @@ color: #333A42;
     top: 85px;
     position: relative;
     text-decoration: none;
-
 }
-
 .New_comments_page_space textarea{
     height: 50px;
     width: 370px;
     left: 16px;
     top: 87px;
     position: relative;
-
 }
-
 .New_comments_page_title_submit {
     height: 24px;
     width: 73px;
@@ -392,7 +359,6 @@ color: #333A42;
     top: 88px;
     position: relative;
 }
-
 .New_comments_page_account_name {
 p{    height: 26px;
     width: 102px;
@@ -400,18 +366,14 @@ p{    height: 26px;
     top: 98px;
     position: relative;
 }
-
 img{
     width: 20px;
     height:20px;
     left: 16px;
     top: 144px;
-
     position: relative;
 }
-
 }
-
 .comments_account_detail{
 p{
     height: 24px;
@@ -429,6 +391,5 @@ img{
     top: 165px;
     border-radius: 0px;
     position: relative;
-}
 }
 }
