@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
      before_action :authenticate_account!
     def show
         @profile = current_account.profile
+
       end
   
       def create
@@ -41,5 +42,9 @@ private
       :image
     )
    end
+
+   def set_post
+    @post = Post.find(params[:id])
+  end
 
 end
