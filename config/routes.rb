@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :accounts
+  root "profiles#index"
   devise_scope :account do
     get '/accounts/sign_out' => 'devise/sessions#destroy'
   end

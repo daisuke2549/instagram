@@ -1,8 +1,10 @@
 
 .post-post_card_image_tag_title{
-    position: relative;
-    margin-top:-500px;
-    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    left: 17px;
+    top: 109px;
+    border-radius: 0px;
 
 }
 
@@ -22,11 +24,12 @@
     width: 30px;
     height: 30px;
     left: 17px;
-    top: 109px;
+    top: 174px;
     background: url(6e4c2cf37c6c69746d2969655b96afa8.jpg), url(Checker.png);
 }
 
 .post_comment_list_top p1{
+    position: relative;
     height: 24px;
     width: 83px;
     left: 146px;
@@ -49,7 +52,7 @@ p{
 
 }
 .post_comment_account_name p2{
-   
+    position: relative;
     height: 24px;
     width: 75px;
     left: 62px;
@@ -61,72 +64,84 @@ p{
 
 .post_card_title_comment p1{
     position: relative;
-    width: 64px;
     height: 23px;
+    width: 64px;
     left: 55px;
-    top: 70px;
-    
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #333333;
+    top: 132px;    
+    white-space: nowrap;
 }
 
 .post_card_title_comment p2{
-    position:relative;
     position: relative;
-    width: 72px;
     height: 20px;
-    white-space: nowrap;
-    left: 55px;
-    top: 65px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: #9E9E9E;
+    width: 72px;
+    left: 20px;
+    top: 150px;
+    
+}
+.post_card_picture_below p1 img{
+position: relative;
+height: 14.87624454498291px;
+width: 15.999910354614258px;
+left: 60px;
+top:160px;
+border-radius: 0px;
+
+}
+
+.post_card_picture_below p2 img{
+    position: relative;
+    height: 14.87624454498291px;
+    width: 15.999910354614258px;
+    left: 0px;
+    top:560px;
+    border-radius: 0px;
+    
+}
+.article_heart img{
+    position: relative;
+    height: 14.87624454498291px;
+    width: 15.999910354614258px;
+    left:35px;
+    top: 137px;
+    border-radius: 0px;
+
+
 }
 
 
 .post_card_picture1{
     position: relative;
+   height: 225px;
     width: 198px;
-    height: 225px;
     left: 17px;
-    top: 129px;
-
+    top: 157px;
 }
 .post_card_picture2{
     position: relative;
-    width: 138px;
     height: 109px;
+    width: 138px;
     left: 222px;
-    top: -100px;
-    background: url(01938081188193.jpg), #C4C4C4;
+    top: 107px;
+    
 }
 
 .post_card_picture3{
     position: relative;
-    width: 138px;
     height: 109px;
+    width: 138px;
     left: 222px;
-    top: -90px;
-    background: url(9ea7a781188193.jpg), #C4C4C4;
+    top: 273px;    
 }
 
 .post_card_picture_below p1{
     position: relative;
-    width: 198px;
-    height: 225px;
-    left: 37px;
-    top: -174px;
+    height: 14.87624454498291px;
+    width: 15.999910354614258px;
+    left: 0.000244140625px;
+    top: 0.5618743896484375px;
+    border-radius: 0px;
+    
 }
 
 .post_card_picture_below p2{
@@ -209,8 +224,8 @@ p{
     position: relative;
     width: 249px;
     height: 20px;
-    left: 17px;
-    top: 420px;
+    left: 27px;
+    top: 130px;
 
     font-family: Poppins;
     font-style: normal;

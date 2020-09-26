@@ -7,6 +7,7 @@ class Account < ApplicationRecord
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_one :profile, dependent: :destroy
+  has_one_attached :image
   delegate :birthday, :age, :gender, to: :profile, allow_nil: true
   has_many :following_relationships, foreign_key: 'follower_id', class_name: 'Relationship', dependent: :destroy
   has_many :followings, through: :following_relationships, source: :following
@@ -28,13 +29,6 @@ class Account < ApplicationRecord
     profile || build_profile
   end
 
-  def avatar_image
-    if profile&.image&.attached?
-      profile.image
-    else
-      'Ellipse.png'
-    end
-  end
 
 
   def follow!(account)
@@ -59,6 +53,13 @@ class Account < ApplicationRecord
       account.id
     else
       account  
+    end
+  end
+  def avatar_image
+    if account&.image&.attached?
+      account.image
+    else
+      'default-avatar.png'
     end
   end
 end
