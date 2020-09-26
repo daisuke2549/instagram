@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_21_120430) do
+ActiveRecord::Schema.define(version: 2020_09_26_015145) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -93,6 +93,15 @@ ActiveRecord::Schema.define(version: 2020_09_21_120430) do
     t.integer "account_id"
     t.date "birthday"
     t.text "introduction"
+  end
+
+  create_table "relationships", force: :cascade do |t|
+    t.integer "following_id", null: false
+    t.integer "follower_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["follower_id"], name: "index_relationships_on_follower_id"
+    t.index ["following_id"], name: "index_relationships_on_following_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

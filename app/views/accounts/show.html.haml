@@ -1,8 +1,15 @@
 .header_logos
 
 .Profile_names_title 
-  = current_account.accountname
-  .ProfilePage_account_edit_action
+  = @account.accountname
+.ProfilePage_account_edit_action
+  - if @account == current_account
+    = link_to 'Edit', edit_profile_path
+  - else
+    - if current_account&.has_followed?(@account)
+      = link_to 'Unfollow', account_follows_path(@account), data: {method: 'post'}
+    - else
+      = link_to 'Follow', account_unfollows_path(@account), data: {method: 'post'}
 .Profile_picture
   = image_tag current_account.avatar_image
 .Profile_new_picture_post
