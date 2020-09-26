@@ -260,7 +260,7 @@ top: 318px;
   height: 24px;
   width: 21px;
   left: 78px;
-  top: 52px;
+  top: 32px;
   position: relative;
   
 }
@@ -268,7 +268,7 @@ top: 318px;
   height: 24px;
   width: 22px;
   left: 158px;
-  top: 30px;
+  top: 10px;
   position: relative;
  
   
@@ -277,11 +277,17 @@ top: 318px;
   height: 24px;
   width: 22px;
   left: 264px;
-  top: 6px;
+  top: -16px;
   position: relative;
 }
 
 .ProfilePage_account_edit_action a{
   position: relative;
   left:10px;
+}
+
+.ProfilePage_account_edit_action {
+  position: relative;
+  top:123px;
+  left:180px;
 }
