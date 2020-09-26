@@ -10,7 +10,10 @@
         %p2
           = post.display_created_at
       .post_card_picture1
-        = image_tag post.image
+        - if post.image.attached?
+          = image_tag(post.image) 
+        - else
+          = image_tag 'default-image-620x600.jpg'
       .post_card_picture_below
         %p1= image_tag 'Vector2.png'
         %p2= image_tag 'Vector3.png'

@@ -4,7 +4,7 @@
   = current_account.accountname
   .ProfilePage_account_edit_action
 .Profile_picture
-  = image_tag current_account.avatar_image
+  = image_tag current_account.avatar_image 
 .Profile_new_picture_post
   %button{type: "button"} 
     = link_to "Image_post", new_post_path
