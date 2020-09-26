@@ -17,13 +17,6 @@
         .post_card_picture_below_show
           %p1= image_tag 'Vector2.png'
           %p2= image_tag 'Vector3.png'
-          - if account_signed_in?
-            - if current_account.has_liked?(@post)
-              .post_heart_show
-                = image_tag 'heart-active.svg'
-            - else
-              .post_heart_show
-                = link_to post_path(@post), data: { method: 'post' } do
-                  = image_tag 'heart.svg'
-          .post_card_content_show
-            = @post.content
+          - @comments.each do |comment|   
+            .post_card_content_show
+              = comment.content

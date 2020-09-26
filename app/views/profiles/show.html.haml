@@ -1,12 +1,37 @@
-.container.profilePage
-  .profilePage_user
-    .profilePage_user_image
-      = image_tag current_account.avatar_image
-    .profilePage_user_basicInfo
-    .profilePage_user_name
-      .profilePage_user_displayName
-        #{current_account.accountname}（#{current_account.age}・#{I18n.t("enum.genders.#{current_account.gender}")}）
-        .profilePage_user_action
-          = link_to 'Edit', edit_profile_path
-      .profilePage_user_introduction
-        = current_account.profile&.introduction
+.header_logos
+
+.Profile_names_title 
+  = current_account.accountname
+  .ProfilePage_account_edit_action
+    = link_to 'Edit', edit_profile_path
+.Profile_picture
+  = image_tag current_account.avatar_image
+.Profile_new_picture_post
+  %button{type: "button"} 
+    = link_to "Image_post", new_post_path
+.Wifi_picture_profiles
+.Profile_posts_number
+  %p1 username
+.Profile_followers_number
+  %p2 100
+.Profile_following_number
+  %p3 44
+.Profile_posts
+  %p Posts
+.Profile_followers
+  %p Followers
+.Profile_following
+  %p Following
+
+.Profile_picture2
+  = image_tag 'Rectangle (1).png', alt: 'profile_picture'
+.Profile_picture3
+  = image_tag 'Rectangle (2).png', alt: 'profile_picture'
+.Profile_picture4
+  = image_tag 'Rectangle (3).png', alt: 'profile_picture'
+.Profile_picture5
+  = image_tag 'Rectangle (4).png', alt: 'profile_picture'
+.Profile_picture6
+  = image_tag 'Rectangle (5).png', alt: 'profile_picture'
+.Profile_picture7
+  = image_tag 'Rectangle (6).png', alt: 'profile_picture'
